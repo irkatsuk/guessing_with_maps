@@ -122,7 +122,7 @@ def handle_dialog(res, req):
                         'hide': True
                     }
                 ]
-            elif 'Покажи город на карте' in req['request']['nlu']['tokens']:
+            elif 'покажи город на карте' in req['request']['nlu']['command']:
                 res['response']['text'] = 'Хорошо. Может сыграем еще раз?'
                 res['response']['buttons'] = [
                     {
